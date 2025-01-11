@@ -29,6 +29,62 @@
             Preencha os dados abaixo para matricular seu filho na escola de
             educação infantil Estrelas do Amanhã.
           </p>
+
+          <form method="post" enctype="multipart/form-data">
+            <fieldset class="child-info">
+              <legend>Informações da criança</legend>
+
+              <div class="input-wrapper">
+                <label for="fullname">Nome Completo</label>
+                <input
+                  type="text"
+                  id="fullname"
+                  placeholder="Digite o nome da criança"
+                  name="fullname"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="birthdate">Data de Nascimento</label>
+                <input
+                  type="date"
+                  id="birthdate"
+                  name="birthdate"
+                  lang="pt-BR"
+                />
+              </div>
+
+              <div class="select-wrapper">
+                <label for="gender">Sexo</label>
+                <select name="gender" id="gender">
+                  <option value="female">Feminino</option>
+                  <option value="male">Masculino</option>
+                  <option value="na">Prefiro não responder</option>
+                </select>
+              </div>
+
+              <div class="textarea-wrapper">
+                <label for="medical-info">Informações médicas</label>
+                <textarea
+                  name="medical-info"
+                  id="medical-info"
+                  placeholder="Digite informações médicas sobre a criança"
+                ></textarea>
+              </div>
+
+              <div class="droparea-wrapper">
+                <label for="photo">Foto da criança</label>
+                <div class="droparea">
+                  <input type="file" name="birth-file" id="birth-file" />
+                  <img
+                    src="assets/icons/cloud-upload.png"
+                    alt="Ícone de uma nuvem com uma seta apontando para baixo, indicando upload de arquivo."
+                  />
+                  <br>Clique aqui para</br> selecionar arquivos</span>
+                </div>
+              </div>
+            </fieldset>
+          </form>
         </div>
       </main>
 
