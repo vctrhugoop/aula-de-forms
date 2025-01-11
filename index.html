@@ -114,13 +114,18 @@
 
               <div class="input-wrapper">
                 <label for="zipcode">CEP</label>
-                <input type="text" id="zipcode" name="zipcode" />
+                <input
+                  type="text"
+                  id="zipcode"
+                  name="zipcode"
+                  placeholder="Digite o CEP"
+                />
               </div>
 
               <div class="flex">
                 <div class="input-wrapper flex-2">
                   <label for="street">Rua</label>
-                  <input type="text" id="street" name="street" />
+                  <input type="text" id="street" name="street" disabled />
                 </div>
 
                 <div class="input-wrapper flex-1">
@@ -132,12 +137,57 @@
               <div class="flex">
                 <div class="input-wrapper flex-2">
                   <label for="city">Cidade</label>
-                  <input type="text" id="city" name="city" />
+                  <input type="text" id="city" name="city" disabled />
                 </div>
 
                 <div class="input-wrapper flex-1">
                   <label for="state">Estado</label>
-                  <input type="text" id="state" name="state" />
+                  <input type="text" id="state" name="state" disabled />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="gardian">
+              <legend>Informações do responsável</legend>
+
+              <div class="input-wrapper">
+                <label for="gardian">Nome do responsável</label>
+                <input
+                  type="text"
+                  id="gardian"
+                  name="gardian"
+                  placeholder="Digite o nome do responsável legal da criança"
+                />
+                <small
+                  >Principal responsável legal e contato de emergência</small
+                >
+              </div>
+
+              <div class="input-wrapper">
+                <label for="phone">Telefone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="(DDD) 9 9999-9999"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="mail">E-mail</label>
+                <input
+                  type="mail"
+                  id="mail"
+                  name="mail"
+                  placeholder="email@email.com.br"
+                  required
+                />
+                <div class="error">
+                  <img
+                    src="assets/icons/alert-circle.svg"
+                    alt="Ícone de alerta vermelho"
+                  />
+                  <span>Insira um e-mail válido</span>
                 </div>
               </div>
             </fieldset>
