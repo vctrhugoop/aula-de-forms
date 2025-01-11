@@ -1,0 +1,32 @@
+:root {
+  --surface-secondary: #fee7d6;
+  --surface-primary: #ffffff;
+  --surface-disabled: #e7e5e4;
+
+  --text-primary: #292524;
+  --text-secondary: #57534e;
+  --text-tertiary: #8f8881;
+  --text-highlight: #e43a12;
+
+  --brand-mid: #f3541c;
+  --brand-dark: #e43a12;
+  --brand-light: #f67841;
+
+  --error: #dc2626;
+
+  --stroke-default: #d6d3d1;
+  --stroke-highlight: #F3541C;
+  
+  --supporting-color-1: #fedf6f;
+  --supporting-color-2: #b8cedc;
+  --supporting-color-3: #c3b2e7;
+  --supporting-color-4: #f9a474;
+  --supporting-color-5: #c7d78d;
+  --supporting-color-6: #f682a5;
+
+
+  --font-family: 'Poppins', sans-serif; 
+
+  --text: 400 1rem/1.5 var(--font-family);
+  --text-sm: 400 .875rem/1.4 var(--font-family);
+}
