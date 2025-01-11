@@ -30,3 +30,13 @@
   --text: 400 1rem/1.5 var(--font-family);
   --text-sm: 400 .875rem/1.4 var(--font-family);
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
