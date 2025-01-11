@@ -9,10 +9,11 @@
 main {
   overflow: auto;
   padding: 4rem;
+  scroll-behavior: smooth;
 
   & .main-container {
     max-width: 33rem;
-    margin-left: auto;
+    margin: auto;
   }
 
   & .back {
@@ -28,6 +29,25 @@ main {
     font: 600 1.5rem/1.25 var(--font-family);
     margin-bottom: 1.5rem;
   }
+}
+
+main::-webkit-scrollbar {
+  width: 12px;
+  height: 12px; 
+}
+
+main::-webkit-scrollbar-track {
+  background: var(--surface-primary);
+  border-radius: 10px;
+}
+
+main::-webkit-scrollbar-thumb {
+  background: var(--brand-light);
+  border-radius: 10px;
+}
+
+main::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-mid);
 }
 
 aside {
