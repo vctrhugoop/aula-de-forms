@@ -53,6 +53,11 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .flex {
   display: flex;
 }
